@@ -1,6 +1,7 @@
 {
-  "name": "dsi-ap1",
+  "name": "ap2-dsi",
   "private": true,
+  "homepage": "https://kmr.dev.br/ap2-dsi/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
