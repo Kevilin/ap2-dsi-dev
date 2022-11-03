@@ -10,7 +10,9 @@ function Home() {
 
   const { buildMl5, runAnalysis, result, setResult } = ML5();
 
-  useEffect(() => buildMl5(), [image]);
+  useEffect(() => {
+    buildMl5();
+  }, [image]);
 
   return (
     <>
