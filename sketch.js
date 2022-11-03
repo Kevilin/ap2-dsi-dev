@@ -9,7 +9,7 @@ let trainingProgress;
 let canvas;
 let cut;
 let ctracker;
-let classes = ["Happy", "Sad", "Surprised"];
+let classes = ["Happy", "Sad", "Angry"];
 let classesCount = [0, 0, 0];
 
 function setup() {
@@ -83,14 +83,14 @@ function setup() {
 function draw() {
   clear();
   image(video, 0, 0);
-  positions = ctracker.getCurrentPosition();
+  let positions = ctracker.getCurrentPosition();
 
   let minx = width,
     miny = height,
     maxx = 0,
     maxy = 0;
 
-  for (var i = 0; i < positions.length; i++) {
+  for (let i = 0; i < positions.length; i++) {
     if (positions[i][0] > maxx) {
       maxx = positions[i][0];
     }
