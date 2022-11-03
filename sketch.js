@@ -9,7 +9,7 @@ let trainingProgress;
 let canvas;
 let cut;
 let ctracker;
-let classes = ["Happy", "Sad", "Angry"];
+let classes = ["Feliz", "Triste", "Bravo"];
 let classesCount = [0, 0, 0];
 
 function setup() {
@@ -62,7 +62,7 @@ function setup() {
     classifier.train((loss) => {
       if (loss === null) {
         trainingProgress.attribute("style", "width:100%");
-        trainingProgress.html("Finished");
+        trainingProgress.html("Concluído");
         console.log("Training finished!");
         classifier.classify(gotResults);
       } else {
